@@ -1,0 +1,19 @@
+/*Profile Image*/
+.imagecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff;
+  height:13em;
+}
+
+.img {
+  width:10em;
+  height:10em;
+  margin-top:2em;
+  z-index: 1;
+  border:solid 0.2em #ffffff;
+  border-radius:0.3em;
+/*+=right,-=left //// +=below -=above ///// blur 0=sharp 10=blurred ////// Spread - default=0*/#ccc;
+  box-shadow: 0.6em 0.6em 1.5em 0.3em rgb(163, 163, 163);
+}
