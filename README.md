@@ -18,3 +18,6 @@ Version 2 - 28/11/16
 
 Version 3 - 5/12/16
 	In this version I have completed the content on the Biography page, and added titles to each of the pages. As well as this, each HTML page has its own CSS document to link to. So the following four files have been added to the css folder; 'indexstyles.css', 'cvstyles.css', 'biostyles.css', and 'contactstyles.css'.
+
+Version 4 - 5/12/16
+	I have completed the contact page. On the left side of the page is a contact form, and on the right is an image of a map and text with other ways to contact. The image has a 0.1em solid orange border with a border radius of 0.8em for the curved edge effect. It also has a shaddow.
