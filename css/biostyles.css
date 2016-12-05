@@ -1,0 +1,41 @@
+/*Daisy Horsfall, 15405233 CYS1018*/
+
+/*Main Content*/
+.main {
+  margin:0;
+  background-color: #ffffff;
+  height:37.4em;
+}
+
+.main h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:2.5em;
+  font-family:"Poiret One", sans-serif;
+  font-weight: normal;
+}
+
+.main p {
+  display: flex;
+  text-align: center;
+  padding-left:10em;
+  padding-right:10em;
+  padding-top:0.8em;
+  font-size: 1.3em;
+  font-family:"Poiret One", cursive;
+  font-weight: normal;
+}
+
+.bottom {
+  padding-bottom:0.3em;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  color:#00BCD4;
+  margin-bottom:2em;
+  margin-top:2em;
+  width: 40em;
+}

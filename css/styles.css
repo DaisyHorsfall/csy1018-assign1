@@ -12,7 +12,7 @@ body {
 }
 
  .clr {
-   clear:both;
+  clear:both;
   background-color:#ffffff;
  }
 
@@ -111,35 +111,6 @@ body {
   text-decoration:none;
 }
 
-/*Main Content*/
-.main {
-  height:22.5em;
-  margin:0;
-  background-color: #ffffff;
-  position:static;
-}
-
-.main h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding-top:0.4em;
-  padding-bottom:0.4em;
-  margin:0;
-  font-family: 'poiret one', sans-serif;
-  font-size: 1.6em;
-  font-weight: normal;
-}
-
-.main p {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  align-items: flex-start;
-  font-family: 'poiret one', sans-serif;
-  font-size: 1.2em;
-}
 
 .article {
   background-color: #ffffff;
