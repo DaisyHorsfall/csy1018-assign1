@@ -1,181 +1,499 @@
 /*Daisy Horsfall, 15405233 CYS1018*/
 
+
 /*Body*/
+
 body {
-  display:flex;
-  flex-direction:column;
-  margin:0;
-  padding:0;
-  min-height:80vh;
-  line-height:120%;
-  background-color:#000;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
- .clr {
-  clear:both;
-  background-color:#ffffff;
- }
 
 /*Header*/
+
 .header {
-  display:flex;
-  flex-direction:row;
-  position:fixed;
-  background-color:#00BCD4;
-  margin:0;
-  padding:0;
-  width: 100%;
-  box-shadow: 0 0.4em 0.7em 0 rgb(163, 163, 163);
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    background-color: #00BCD4;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
 }
 
-.header h1 {
-  justify-content: flex-start;
-  font-size:2em;
-  font-weight: normal;
-  padding:0 0 0 4em;
-  font-family: 'poiret one', sans-serif;
+
+/*Logo Image*/
+
+.logo {
+    margin-left: 6em;
+    margin-right: 3em;
 }
 
-/*Header Link*/
-.header a:link {
-  color:#ffffff;
-  text-decoration:none;
-}
-
-.header a:visited {
-  color:#ffffff;
-  text-decoration: none;
-}
-
-.header a:hover {
-  color:#FFB246;
-  text-decoration: none;
-}
 
 /*Navigation Bar*/
-.nav {
-  display:flex;
-  margin:0;
-  padding:0 0 0 29em;
-  font-family: 'poiret one', sans-serif;
+
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 29em;
+    font-family: 'poiret one', sans-serif;
 }
 
-.nav ul {
-  display:flex;
-  align-items: center;
-  list-style-type:none;
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
 
-.nav li {
-  font-size:1.5em;
-  justify-content:flex-end;
+.navbar li {
+    font-size: 1.5em;
+    justify-content: flex-end;
 }
 
-.menubutton1 {
-  margin:0 0.4em;
-  padding:0.2em 0.9em;
-  align-items: center;
+.home-button {
+    margin: 0 0.4em;
+    padding: 0.2em 0.9em;
+    align-items: center;
 }
 
-.menubutton2 {
-  margin:0 0.4em;
-  padding:0.2em 1.4em;
-  align-items: center;
+.cv-button {
+    margin: 0 0.4em;
+    padding: 0.2em 1.4em;
+    align-items: center;
 }
 
-.menubutton3 {
-  margin:0 0.4em;
-  padding:0.2em 1.6em;
-  align-items: center;
+.bio-button {
+    margin: 0 0.4em;
+    padding: 0.2em 1.6em;
+    align-items: center;
 }
 
-.menubutton4 {
-  margin:0 0.4em;
-  padding:0.2em 0.5em;
-  align-items: center;
-}
-
-/*Navigation Links*/
-.nav a:link {
-  color:#ffffff;
-  text-decoration:none;
-}
-
-.nav a:visited {
-  color:#ffffff;
-  text-decoration:none;
-}
-
-.nav a:hover {
-  color:#FFB246;
-  text-decoration:none;
+.contact-button {
+    margin: 0 0.4em;
+    padding: 0.2em 0.5em;
+    align-items: center;
 }
 
 
-.article {
-  background-color: #ffffff;
-  height:13.2em;
+/*Links*/
+
+.navbar a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #607D8B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+----------- .covercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+}
+
+
+/*Placeholder Cover Image*/
+
+.cover-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: -1;
+    width: 100%;
+    height: 299px;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+}
+
+
+/*Profile Image*/
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    z-index: 1;
+    position: absolute;
+}
+
+.profile-image {
+    width: 10em;
+    margin-left: 37.5em;
+    margin-top: 2em;
+    border: solid 0.2em #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+}
+
+
+/*Main Content Sections*/
+
+.infoboxes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.box {
+    background-color: #fff;
+    height: 9em;
+    width: 20em;
+    margin: 2em 4em 2.66em 4em;
+    border: 0.1em solid #607D8B;
+    border-radius: 0.5em;
+    text-align: center;
+    transition: height 0s, background-color 0s;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+}
+
+.box:hover {
+    background-color: #607D8B;
+    transition: background-color 3s;
+}
+
+.box a:link {
+    text-decoration: none;
+    color: #00BCD4;
+}
+
+.box a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.box a:visited {
+    text-decoration: none;
+    color: #00BCD4;
+}
+
+.cv-main-content {
+    margin: 0;
+    background-color: #ffffff;
+    height: 32.47em;
+}
+
+.cv-main-content h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poiret One", sans-serif;
+    font-weight: normal;
+}
+
+/*Wrapper*/
+.wrap {
+  display: flex;
+  flex-direction: row;
 }
 
 /*Left Side Content*/
 .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width:50%;
-  font-family: 'poiret one', sans-serif;
-  font-size: 1em;
+  margin:0;
+  padding-left:4em;
+  padding-right:4em;
+  background-color: #ffffff;
+  align-items: flex-start;
 }
 
-.left p {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding:0;
+.left h3 {
+  font-family:"Poiret One", cursive;
+  font-weight: bold;
+  font-size:1.3em;
+  padding:1em, 0 0 0;
+  marign-bottom:0;
+}
+
+.name {
+  font-weight:normal;
+  font-size:1em;
 }
 
 .left ul {
-  font-family: 'poiret one', sans-serif;
-  font-size: 1.2em;
-
+  font-family:"Poiret One", cursive;
+  margin-top:0;
+  padding-top:0;
 }
 
-/*Right Side Content*/
-.right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap
-  margin:0;
-  width:50%;
-  font-family: 'poiret one', sans-serif;
+.school {
+  font-weight: bold;
+  margin-left:-1em;
   font-size: 1em;
 }
 
+.courses {
+  margin-left:-1em;
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+.date {
+  list-style-type: none;
+  padding-bottom:0.9em;
+  margin-left:-1em;
+  font-size: 0.8em;
+
+}
+
+
+/*Right Side Content*/
+.right {
+  margin:0;
+  padding:0 3em 0 3em;
+  background-color:#ffffff;
+  align-items: flex-start;
+}
+
+.right h3 {
+  font-family:"Poiret One", cursive;
+  font-weight: bold;
+  font-size:1.3em;
+  padding:1em, 0 0 0;
+  marign-bottom:0;
+}
+
 .right p {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  font-family:"Poiret One", cursive;
+  font-weight:normal;
 }
 
-.foot {
-  width: 100%;
-  height:4em;
-  background-color: #4DD0E1;
-  box-shadow: 0 -0.4em 0.7em 0 rgb(163, 163, 163);
+.right ul {
+  column-count: 2;
+  column-gap:2.5em;
+  list-style-type: circle;
+  font-size: 1.2em;
+  margin:0;
 }
 
-@media (max-width:400px) {
-    body {
-      display: flex;
-      flex-direction: column;
-    }
+.bio-main-content {
+    margin: 0;
+    background-color: #ffffff;
+}
 
-    .header {
-      display: flex;
-      flex-direction: column;
-      margin:0;
-      height:
-    }
+.bio-main-content h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poiret One", sans-serif;
+    font-weight: normal;
+    margin-top: 1em
+}
+
+.bio-main-content p {
+    display: flex;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 0.2em;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "Poiret One", cursive;
+    font-weight: normal;
+}
+
+.end-line {
+    display: flex;
+    justify-content: center;
+    color: #00BCD4;
+    margin-bottom: 2em;
+    margin-top: 2.05em;
+    width: 40em;
+}
+
+.bio-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2.8em;
+    margin-top: 0.7em;
+}
+
+.bio-image-trio {
+    border: solid 0.2em #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+}
+
+.contact-main-content {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.contact-main-content h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poiret One", sans-serif;
+    font-weight: normal;
+}
+
+.contact-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-right: 13em;
+    margin-left: 5em;
+}
+
+
+/*Left Side Content*/
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    height: 27.45em;
+}
+
+.contact-left p {
+    display: flex;
+    margin: -0.5em 8em 0 3em;
+    text-align: center;
+    font-family: 'poiret one', sans-serif;
+    font-size: 1.2em;
+}
+
+
+/*Contact Form*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8em;
+    margin-top: 1em;
+}
+
+.linefield {
+    font-family: "Poiret One";
+    font-size: 1.2em;
+    width: 15.5em;
+    padding-left: 0.5em;
+    height: 1.2em;
+    margin-bottom: 1em;
+    border: solid 0.2em #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
+}
+
+.message-field {
+    font-family: "Poiret One";
+    font-size: 1.2em;
+    width: 15.5em;
+    padding-left: 0.5em;
+    height: 10em;
+    margin-bottom: 1em;
+    border: solid 0.2em #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
+}
+
+.send-button {
+    font-family: "Poiret One";
+    font-size: 1em;
+    height: 2em;
+    width: 4em;
+    color: black;
+    font-weight: bold;
+    background-color: #607D8B;
+    border: 0.1em solid #607D8B;
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
+}
+
+.send-button:hover {
+    color: black;
+    font-weight: bold;
+    border: 0.1em solid #607D8B;
+    background-color: #afbec5;
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
+}
+
+
+/*Right Side Content*/
+
+.contact-right {
+    background-color: #ffffff;
+    height: 27.45em;
+    margin-top: -1.5em;
+}
+
+.contact-right ul {
+    display: flex;
+    flex-direction: column;
+    font-family: 'poiret one', sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.other-contact-options {
+    list-style-type: none;
+    font-size: 1.3em;
+    padding-bottom: 0.2em;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 1.3em;
+    padding-bottom: 0.2em;
+    list-style-type: none;
+}
+
+.map {
+    margin-left: 3em;
+    height: 16em;
+    border: solid 0.2em #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+}
+
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    height: 4em;
+    background-color: #4DD0E1;
+    box-shadow: 0 -0.4em 0.7em 0 rgb(60, 60, 60);
+}
+
+.socialmediabar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.facebook {
+    margin-top: 1em;
+    height: 1.5em;
+    padding-right: 0.1em;
+}
+
+.twitter {
+    margin-top: 1em;
+    height: 1.5em;
+    padding-left: 0.1em;
+}
+
+.linkedin {
+    margin-top: 1em;
+    height: 1.5em;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
 }
