@@ -155,23 +155,12 @@ body {
     border: 0.1em solid #607D8B;
     border-radius: 0.5em;
     text-align: center;
-    transition: height 0s, background-color 0s;
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
-}
-
-.box:hover {
-    background-color: #607D8B;
-    transition: background-color 3s;
 }
 
 .box a:link {
     text-decoration: none;
     color: #00BCD4;
-}
-
-.box a:hover {
-    text-decoration: none;
-    color: #fff;
 }
 
 .box a:visited {

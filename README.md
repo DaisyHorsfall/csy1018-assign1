@@ -24,4 +24,7 @@ Version 5 - 5/01/17
 	I have added in a 1350x300 cover image (currently represented by a placeholder) and three boxes of information on the homepage (index page). Content on the 'CV' page has been added. I have shortened the biography on the 'Bio' page and have added 3 300x175 images (represented by placeholders). The styling on the 'Contact' page has also been updated to make the whole site consistent.
 
 Version 6 - 6/01/17
-	I have added in a media query to adapt the website so it can be displayed well on mobile devices. I have used @media (max-width:30em).
+	I have added in a media query	to adapt the website so it can be displayed well on mobile devices. It has a perimeter of 1 and 500px.
+
+Version 7 - 6/01/17
+	I have added in a second media query so the website can be displayed well on a tablet device. It has a perimeter of 501 - 1024px.
