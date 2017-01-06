@@ -28,3 +28,6 @@ Version 6 - 6/01/17
 
 Version 7 - 6/01/17
 	I have added in a second media query so the website can be displayed well on a tablet device. It has a perimeter of 501 - 1024px.
+
+Version 8 - 6/01/17
+	Added a bit more work on media queries.

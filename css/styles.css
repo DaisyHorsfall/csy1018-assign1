@@ -28,8 +28,7 @@ body {
 /*Logo Image*/
 
 .logo {
-    margin-left: 6em;
-    margin-right: 3em;
+    margin: 0 10% 0 5%;
 }
 
 
@@ -38,7 +37,7 @@ body {
 .navbar {
     display: flex;
     margin: 0;
-    padding: 0 0 0 29em;
+    padding: 0 0 0 30%;
     font-family: 'poiret one', sans-serif;
 }
 
@@ -46,6 +45,7 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;
+    justify-content: space-between;
 }
 
 .navbar li {
@@ -54,7 +54,7 @@ body {
 }
 
 .home-button {
-    margin: 0 0.4em;
+    margin: 0 5%;
     padding: 0.2em 0.9em;
     align-items: center;
 }

@@ -170,7 +170,7 @@
 }
 
 
-/*When between 501 and 1024px - iPad or Tablet size*/
+/*When between 501 and 1300px - iPad or Tablet size*/
 @media (min-width:501px) and (max-width:1024px) {
     body {
         display: flex;
@@ -335,7 +335,5 @@
     }
 }
 
-
-/*When above 1024px*/
-
-@media (min-width:1025px) {}
+/*When between 1025 and 1300px - iPad or Tablet size*/
+@media (min-width:1025px) and (max-width:1300px) {
