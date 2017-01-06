@@ -18,7 +18,10 @@ Version 3 - 5/12/16
 Version 4 - 5/12/16
 	I have completed the contact page. On the left side of the page is a contact form, and on the right is an image of a map and text with other ways to contact. The image has a 0.1em solid orange border with a border radius of 0.8em for the curved edge effect. It also has a shadow.
 
-Version 5 - 5/01/16
+Version 5 - 5/01/17
 	Lots has been updated in this version. I have updated the footer on each page to include social media icons that link to their respective websites. A favicon has also been added for the site. I have changed the header on each page slightly - instead of having 'Daisy Horsfall' written out, a logo has been added. The orange has been replaced with a dusty blue-grey colour and the shadow effects have been changed. These are consistent throughout the whole site.
 
 	I have added in a 1350x300 cover image (currently represented by a placeholder) and three boxes of information on the homepage (index page). Content on the 'CV' page has been added. I have shortened the biography on the 'Bio' page and have added 3 300x175 images (represented by placeholders). The styling on the 'Contact' page has also been updated to make the whole site consistent.
+
+Version 6 - 6/01/17
+	I have added in a media query to adapt the website so it can be displayed well on mobile devices. I have used @media (max-width:30em).

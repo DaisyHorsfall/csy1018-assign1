@@ -193,88 +193,93 @@ body {
     font-weight: normal;
 }
 
+
 /*Wrapper*/
+
 .wrap {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
+
 /*Left Side Content*/
+
 .left {
-  margin:0;
-  padding-left:4em;
-  padding-right:4em;
-  background-color: #ffffff;
-  align-items: flex-start;
+    margin: 0;
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: #ffffff;
+    align-items: flex-start;
 }
 
 .left h3 {
-  font-family:"Poiret One", cursive;
-  font-weight: bold;
-  font-size:1.3em;
-  padding:1em, 0 0 0;
-  marign-bottom:0;
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 1em, 0 0 0;
+    marign-bottom: 0;
 }
 
 .name {
-  font-weight:normal;
-  font-size:1em;
+    font-weight: normal;
+    font-size: 1em;
 }
 
 .left ul {
-  font-family:"Poiret One", cursive;
-  margin-top:0;
-  padding-top:0;
+    font-family: "Poiret One", cursive;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .school {
-  font-weight: bold;
-  margin-left:-1em;
-  font-size: 1em;
+    font-weight: bold;
+    margin-left: -1em;
+    font-size: 1em;
 }
 
 .courses {
-  margin-left:-1em;
-  text-align: justify;
-  font-size: 0.8em;
+    margin-left: -1em;
+    text-align: justify;
+    font-size: 0.8em;
 }
 
 .date {
-  list-style-type: none;
-  padding-bottom:0.9em;
-  margin-left:-1em;
-  font-size: 0.8em;
-
+    list-style-type: none;
+    padding-bottom: 0.9em;
+    margin-left: -1em;
+    font-size: 0.8em;
 }
 
 
 /*Right Side Content*/
+
 .right {
-  margin:0;
-  padding:0 3em 0 3em;
-  background-color:#ffffff;
-  align-items: flex-start;
+    margin: 0;
+    padding: 0 3em 0 3em;
+    background-color: #ffffff;
+    align-items: flex-start;
 }
 
 .right h3 {
-  font-family:"Poiret One", cursive;
-  font-weight: bold;
-  font-size:1.3em;
-  padding:1em, 0 0 0;
-  marign-bottom:0;
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 1em, 0 0 0;
+    marign-bottom: 0;
 }
 
 .right p {
-  font-family:"Poiret One", cursive;
-  font-weight:normal;
+    font-family: "Poiret One", cursive;
+    font-weight: normal;
 }
 
 .right ul {
-  column-count: 2;
-  column-gap:2.5em;
-  list-style-type: circle;
-  font-size: 1.2em;
-  margin:0;
+    column-count: 2;
+    column-gap: 2.5em;
+    list-style-type: circle;
+    font-family: "Poiret One", cursive;
+    font-size: 1.2em;
+    margin: 0;
 }
 
 .bio-main-content {
@@ -316,10 +321,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 2.8em;
-    margin-top: 0.7em;
+    margin: 0.7em 5em 2.8em 5em;
 }
 
 .bio-image-trio {
@@ -457,7 +459,7 @@ body {
 
 .map {
     margin-left: 3em;
-    height: 16em;
+    width: 16em;
     border: solid 0.2em #ffffff;
     border-radius: 0.3em;
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
