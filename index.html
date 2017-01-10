@@ -1,71 +1,73 @@
 <!DOCTYPE html>
-<!--Daisy Horsfall, 15405233 CYS1018-->
 <html>
 
 <head>
+    <!--Daisy Horsfall, 15405233 CYS1018-->
     <meta charset="utf-8">
     <title>Daisy Horsfall</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One" />
     <link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
 </head>
 
 <body>
-    <!--Header Bar and Navigation-->
+    <!--Header Bar, Logo and Navigation-->
     <header class="header">
 
-        <image class="logo" src="images/logo.png" title="Daisy Horsfall"></image>
-
-        <nav class="navbar">
+    <a href="index.html" class="header-logo-link">
+      <img class="header-logo" alt="Logo" title="Logo" src="images/logo.png" />
+    </a>
+        <nav class="header-navbar">
             <ul>
-                <li class="home-button" title="Home"><a href="index.html">Home</a></li>
-                <li class="cv-button" title="CV"><a href="cv.html">CV</a></li>
-                <li class="bio-button" title="Biographgy"><a href="bio.html">Bio</a></li>
-                <li class="contact-button" title="Contact Me"><a href="contact.html">Contact</a></li>
+                <li class="header-navbar-button" title="Home"><a href="index.html">Home</a></li>
+                <li class="header-navbar-button" title="CV"><a href="cv.html">CV</a></li>
+                <li class="header-navbar-button" title="Biographgy"><a href="bio.html">Bio</a></li>
+                <li class="header-navbar-button" title="Contact Me"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="profile-container">
-        <image class="profile-image" title="Profile Image" src="images/profile.jpg" />
+    <!--Profile Picture-->
+    <div class="index-profile-container">
+        <img class="index-profile-image" alt="Profile Image" title="Profile Image" src="images/profile.jpg" />
     </div>
 
-    <div class="covercontainer">
-        <image class="cover-image" title="Placeholder Image" src="http://placehold.it/1350x300"></image>
+    <!--Cover Picture-->
+    <div class="index-cover-container">
+        <img class="index-cover-image" alt="Placeholder Image" title="Placeholder Image" src="http://placehold.it/1350x300" />
     </div>
 
-    <main class="infoboxes-container">
+    <!--Main Content-->
+    <main class="index-boxes-wrapper">
 
-        <div class="box">
-            <p>Take a look at my CV</p>
-            <a href="cv.html">My CV</a>
+        <div class="index-box">
+            <p>My name is Daisy Horsfall. Have a look at my bio to find out more about me.</p>
         </div>
 
-        <div class="box">
-            <p>Find out a bit more about me..</p>
-            <a href="bio.html">My Biography</a>
+        <div class="index-box">
+            <p>Look at my CV to see my previous experience and eduction.</p>
+
         </div>
 
-        <div class="box">
-            <p>Find out how to get intouch</p>
-            <a href="contact.html">Contact Me</a>
+        <div class="index-box">
+            <p>Go to the Contact page to find out how to get in contact with me.</p>
         </div>
     </main>
 
+    <!--Footer-->
     <footer class="footer">
-        <div class="socialmediabar">
+        <div class="footer-social-media-bar">
             <a href="http://www.facebook.com">
-                <image src="images/facebook-icon.png" alt="Facebook" title="Facebook" class="facebook" />
+                <img src="images/facebook-icon.png" alt="Facebook" title="Facebook" class="footer-social-media-facebook" />
             </a>
             <a href="http://www.twitter.com">
-                <image src="images/twitter-icon.png" alt="Twitter" title="Twitter" class="twitter" />
+                <img src="images/twitter-icon.png" alt="Twitter" title="Twitter" class="footer-social-media-twitter" />
             </a>
             <a href="http://www.linkedin.com">
-                <image src="images/linkedin-icon.png" alt="Linkedin" title="Linkedin" class="linkedin" />
+                <img src="images/linkedin-icon.png" alt="Linkedin" title="Linkedin" class="footer-social-media-linkedin" />
             </a>
         </div>
     </footer>
 </body>
-
 </html>

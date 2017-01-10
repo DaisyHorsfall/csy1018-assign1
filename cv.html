@@ -2,102 +2,106 @@
 <!--Daisy Horsfall, 15405233 CYS1018-->
 
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>CV</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="css/media.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>CV</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--Header Bar and Navigation-->
-  <header class="header">
-    <image class="logo" src="images/logo.png"></image>
+    <!--Header Bar and Navigation-->
+    <header class="header">
 
-    <nav class="navbar">
-      <ul>
-        <li class="home-button"><a href="index.html">Home</a></li>
-        <li class="cv-button"><a href="cv.html">CV</a></li>
-        <li class="bio-button"><a href="bio.html">Bio</a></li>
-        <li class="contact-button"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <a href="index.html" class="header-logo-link">
+        <img class="header-logo" alt="Logo" title="Logo" src="images/logo.png" />
+      </a>
 
-  <main class="cv-main-content">
-    <h1>My CV</h1>
-
-    <wrapper class="wrap">
-  <aside class="left">
-    <h3>Name: <span class="name"> Daisy May Horsfall</span></h3>
-
-    <h3>Education</h3>
-    <ul>
-      <li class="school">University of Northampton</li>
-        <ul>
-          <li class="courses">Business Computing (Web Design) BSc (Hons)</li>
-            <li class="date">September 2016 - Present</li>
-        </ul>
-
-      <li class="school">King Edward VI Sixth Form College, Nuneaton</li>
-        <ul>
-            <li class="courses">A Levels: Information Technology,
-            Health and Social Care, and Psychology</li>
-            <li class="date">September 2013 - June 2015</li>
-        </ul>
-
-      <li class="school">Etone College, Nuneaton</li>
-        <ul>
-          <li class="courses">GCSEs: English Language, English
-            Literature, Mathematics, Core Science, Additional
-            Science, Religious Studies, Geography, Spanish,
-            Design Technology: Textiles, and a Cida+ Qualification
-            in Digital Applications.</li>
-            <li class="date">September 2008 - June 2013</li>
-        </ul>
-    </ul>
-  </aside>
-  <aside class="right">
-    <h3>Relevant Coursework</h3>
-    <p></p>
+        <nav class="header-navbar">
+          <ul>
+              <li class="header-navbar-button" title="Home"><a href="index.html">Home</a></li>
+              <li class="header-navbar-button" title="CV"><a href="cv.html">CV</a></li>
+              <li class="header-navbar-button" title="Biographgy"><a href="bio.html">Bio</a></li>
+              <li class="header-navbar-button" title="Contact Me"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
 
 
-    <h3>Professional Experience</h3>
-    <p></p>
+    <!--Main Content-->
+    <main class="cv-main-content">
+        <h1>My CV</h1>
 
-    <h3>Skills</h3>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>Flexbox</li>
-      <li>Material Design</li>
-      <li>JavaScript</li>
-      <li>Command Line</li>
-      <li>Java</li>
-      <li>Greenfoot</li>
-      <li>Problem Solving</li>
-      <li>Relational Database Design</li>
-      <li>Requirements Engineering</li>
-      <li>Independant Learning</li>
-    </ul>
+        <!--Wrapper around left and right content-->
+        <section class="cv-content-wrapper">
+            <article class="cv-left-content">
+                <h3>Name: <span class="cv-full-name"> Daisy May Horsfall</span></h3>
 
-    <h3>Activities Related to Web Design</h3>
-    <p></p>
+                <h3>Education</h3>
+                  <h6>University of Northampton</h6>
+                        <p class="cv-education-course">Business Computing (Web Design) BSc (Hons)</p>
+                        <p class="cv-course-date">September 2016 - Present</p>
 
-  </aside>
-</wrapper>
-  </main>
+                    <h6>King Edward VI Sixth Form College, Nuneaton</h6>
+                        <p class="cv-education-course">A Levels: Information Technology, Health and Social Care, and Psychology</p>
+                        <p class="cv-course-date">September 2013 - June 2015</p>
 
-  <footer class="footer">
-    <div class="socialmediabar">
-      <a href="http://www.facebook.com"><image src="images/facebook-icon.png" alt="Facebook" title="Facebook" class="facebook" /></a>
-      <a href="http://www.twitter.com"><image src="images/twitter-icon.png" alt="Twitter" title="Twitter" class="twitter" /></a>
-      <a href="http://www.linkedin.com"><image src="images/linkedin-icon.png" alt="Linkedin" title="Linkedin" class="linkedin" /></a>
-    </div>
-  </footer>
+                    <h6>Etone College, Nuneaton</h6>
+                        <p class="cv-education-course">GCSEs: English Language, English Literature, Mathematics, Core Science, Additional Science, Religious Studies, Geography, Spanish, Design Technology: Textiles, and a Cida+ Qualification in Digital Applications.</p>
+                        <p class="cv-course-date">September 2008 - June 2013</p>
+
+            </article>
+
+            <article class="cv-right-content">
+                <h3>Relevant Coursework</h3>
+                <p>As part of my Information Technology A Level, I worked with a real-world client </p>
+
+
+                <h3>Professional Experience</h3>
+                <p>I am currently starting a </p>
+
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Flexbox</li>
+                    <li>Material Design</li>
+                    <li>JavaScript</li>
+                    <li>Command Line</li>
+                    <li>Java</li>
+                    <li>Greenfoot Programming</li>
+                    <li>Problem Solving</li>
+                    <li>Relational Database Design</li>
+                    <li>Requirements Engineering</li>
+                    <li>Independant Learning</li>
+                </ul>
+
+                <h3>Activities Related to Web Design</h3>
+                <p></p>
+
+            </article>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-social-media-bar">
+            <a href="http://www.facebook.com">
+                <img src="images/facebook-icon.png" alt="Facebook" title="Facebook" class="footer-social-media-facebook" />
+            </a>
+            <a href="http://www.twitter.com">
+                <img src="images/twitter-icon.png" alt="Twitter" title="Twitter" class="footer-social-media-twitter" />
+            </a>
+            <a href="http://www.linkedin.com">
+                <img src="images/linkedin-icon.png" alt="Linkedin" title="Linkedin" class="footer-social-media-linkedin" />
+            </a>
+        </div>
+    </footer>
 
 
 </body>
+
 </html>

@@ -1,92 +1,84 @@
+/*Daisy Horsfall, 15405233 CYS1018*/
+
 /*Media Queries*/
 
-@media (max-width:500px) {
-    /*When between 1 and 500px - Mobile Phone Size*/
+/*When between 1 and 500px - Mobile Phone Size*/
+@media (max-width:1250px) {
     body {
         display: flex;
         flex-direction: column;
         min-width: 100%
     }
+
+  /*Header*/
     .header {
         display: flex;
         flex-direction: column;
         width: 100%;
+        text-align: center;
         height: auto;
     }
-    .logo {
+    .header-logo {
         display: none;
     }
-    .navbar {
+    .header-navbar {
         display: flex;
         padding: 0;
         margin: 0;
         justify-content: center;
     }
-    .navbar ul {
+    .header-navbar ul {
         flex-direction: column;
         padding: 0;
         margin: 0;
     }
-    .home-button {
+    .header-navbar-button {
         margin: 0 0.4em;
         padding: 0.2em 0.9em;
         align-items: center;
     }
-    .cv-button {
-        margin: 0 0.4em;
-        padding: 0.2em 1.4em;
-        align-items: center;
-    }
-    .bio-button {
-        margin: 0 0.4em;
-        padding: 0.2em 1.6em;
-        align-items: center;
-    }
-    .contact-button {
-        margin: 0 0.4em;
-        padding: 0.2em 0.5em;
-        align-items: center;
-    }
-    .covercontainer {
+
+/*Index - Homepage - Content*/
+.index-profile-container {
+    display: flex;
+    position: static;
+    flex-direction: column;
+}
+.index-profile-image {
+    width: 50%;
+    margin: 5% 25% 3% 25%;
+}
+    .index-covercontainer {
         display: none;
     }
-    .cover-image {
+    .index-cover-image {
         display: none;
     }
-    .profile-container {
-        display: flex;
-        position: static;
-    }
-    .profile-image {
-        align-items: center;
-        width: 50%;
-        margin: 3% 25% 2.5% 25%;
-    }
-    /*Index Content*/
-    .infoboxes-container {
+
+    .index-boxes-wrapper {
         display: flex;
         flex-direction: column;
-        height: auto;
     }
-    .box {
+    .index-box {
         padding: 0;
         width: 75%;
         margin: 4% 12.5% 8% 12.5%;
         align-items: center;
     }
-    /*CV Page*/
+    /*CV Content*/
     .cv-main-content {
         height: auto;
     }
-    .wrap {
+    .cv-content-wrapper {
         display: flex;
         flex-direction: column;
     }
-    .left {
+
+    .cv-left-content {
         margin: 0 5%;
         padding: 0;
     }
-    .right {
+    .cv-right-content {
         margin: 0 5%;
         padding: 0;
     }
@@ -95,7 +87,7 @@
         padding: 1% 7%;
         height: auto;
     }
-    .end-line {
+    .bio-end-line {
         width: 75%;
     }
     .bio-image-container {
@@ -115,225 +107,56 @@
         margin: 0;
         padding: 0;
     }
-    .contact-left {
+    .contact-left-content {
         display: flex;
         flex-direction: column;
         height: auto;
         margin: 0;
         padding: 0;
     }
-    .contact-left p {
+    .contact-left-content p {
         width: 75%;
         margin: 0 12.5%;
         padding: 0 0 5% 0;
     }
     /*Contact Form*/
-    .contact-form {
+    .contact-static-form {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
         align-items: center;
     }
-    .linefield {
+    .contact-form-basic-field {
         display: flex;
         flex-direction: column;
         width: 74.5%;
         padding-left: 0;
         margin: 0 0 5% 0;
     }
-    .message-field {
+    .contact-form-message-field {
         width: 100%;
         width: 72%;
     }
-    .send-button {
+    .contact-form-send-button {
         margin-bottom: 10%;
     }
-    .contact-right {
+    .contact-right-content {
         display: flex;
         flex-direction: column;
         height: auto;
         margin: 0;
         padding: 0;
     }
-    .contact-right ul {
+    .contact-right-content ul {
         display: flex;
         padding: 5% 0 5% 0;
         margin: 0;
     }
-    .map {
-        display: flex;
-        padding: 0;
-        margin: 0 12.5% 10% 12.5%;
-        width: 75%;
+      .contact-map {
+          display: flex;
+          padding: 0;
+          margin: 0 12.5% 10% 12.5%;
+          width: 75%;
     }
 }
-
-
-/*When between 501 and 1300px - iPad or Tablet size*/
-@media (min-width:501px) and (max-width:1024px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        min-width: 100%
-    }
-    .header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    .logo {
-        display: none;
-    }
-    .navbar {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-    }
-    .navbar ul {
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
-    .home-button {
-        margin: 0 0.4em;
-        padding: 0.2em 0.9em;
-        align-items: center;
-    }
-    .cv-button {
-        margin: 0 0.4em;
-        padding: 0.2em 1.4em;
-        align-items: center;
-    }
-    .bio-button {
-        margin: 0 0.4em;
-        padding: 0.2em 1.6em;
-        align-items: center;
-    }
-    .contact-button {
-        margin: 0 0.4em;
-        padding: 0.2em 0.5em;
-        align-items: center;
-    }
-    .covercontainer {}
-    .cover-image {}
-    .profile-container {
-        display: none;
-    }
-    .profile-image {
-        display: none;
-    }
-    /*Index Content*/
-    .infoboxes-container {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-    }
-    .box {
-        padding: 0;
-        margin: 6.9% 5%;
-        align-items: center;
-    }
-    .box p {
-        padding: 0;
-        line-height: 1em;
-    }
-    /*CV Page*/
-    .cv-main-content {
-        height: auto;
-    }
-    .wrap {
-        display: flex;
-        flex-direction: column;
-    }
-    .left {
-        margin: 0 5%;
-        padding: 0;
-    }
-    .right {
-        margin: 0 5%;
-        padding: 0;
-    }
-    /*Bio Page*/
-    .bio-main-content p {
-        padding: 1% 7%;
-        height: auto;
-    }
-    .end-line {
-        width: 75%;
-    }
-    .bio-image-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-    .bio-image-trio {
-        width: 75%;
-        margin: 4% 12.5% 8% 12.5%;
-    }
-    /*Contact Page*/
-    .contact-wrap {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-    .contact-left {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-    .contact-left p {
-        width: 75%;
-        margin: 0 12.5%;
-        padding: 0 0 5% 0;
-    }
-    /*Contact Form*/
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-    }
-    .linefield {
-        display: flex;
-        flex-direction: column;
-        width: 74.5%;
-        padding-left: 0;
-        margin: 0 0 5% 0;
-    }
-    .message-field {
-        width: 100%;
-        width: 72%;
-    }
-    .send-button {
-        margin-bottom: 10%;
-    }
-    .contact-right {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-    .contact-right ul {
-        display: flex;
-        padding: 5% 0 5% 0;
-        margin: 0;
-    }
-    .map {
-        display: flex;
-        padding: 0;
-        margin: 0 12.5% 10% 12.5%;
-        width: 75%;
-    }
-}
-
-/*When between 1025 and 1300px - iPad or Tablet size*/
-@media (min-width:1025px) and (max-width:1300px) {

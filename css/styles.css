@@ -1,8 +1,6 @@
 /*Daisy Horsfall, 15405233 CYS1018*/
 
-
 /*Body*/
-
 body {
     display: flex;
     flex-direction: column;
@@ -11,115 +9,96 @@ body {
     padding: 0;
 }
 
-
-/*Header*/
-
+/*Used by every page*/
+/*Header, Logo and Navigation Bar*/
 .header {
     display: flex;
     flex-direction: row;
     z-index: 1;
     background-color: #00BCD4;
+    width: 100%;
     margin: 0;
     padding: 0;
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
 }
 
-
-/*Logo Image*/
-
-.logo {
-    margin: 0 10% 0 5%;
+.header-logo-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 10% 0 5%;
 }
 
-
-/*Navigation Bar*/
-
-.navbar {
+.header-navbar {
     display: flex;
-    margin: 0;
-    padding: 0 0 0 30%;
+    margin: 0 0 0 35%;
     font-family: 'poiret one', sans-serif;
 }
 
-.navbar ul {
+.header-navbar ul {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     list-style-type: none;
-    justify-content: space-between;
-}
-
-.navbar li {
     font-size: 1.5em;
-    justify-content: flex-end;
 }
 
-.home-button {
-    margin: 0 5%;
-    padding: 0.2em 0.9em;
-    align-items: center;
+.header-navbar-button {
+    margin: 2% 15%;
 }
 
-.cv-button {
-    margin: 0 0.4em;
-    padding: 0.2em 1.4em;
-    align-items: center;
-}
-
-.bio-button {
-    margin: 0 0.4em;
-    padding: 0.2em 1.6em;
-    align-items: center;
-}
-
-.contact-button {
-    margin: 0 0.4em;
-    padding: 0.2em 0.5em;
-    align-items: center;
-}
-
-
-/*Links*/
-
-.navbar a:link {
+.header-navbar a:link {
     color: #ffffff;
     text-decoration: none;
 }
 
-.navbar a:visited {
+.header-navbar a:visited {
     color: #ffffff;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.header-navbar a:hover {
     color: #607D8B;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
 }
 
------------ .covercontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #fff;
-}
-
-
-/*Placeholder Cover Image*/
-
-.cover-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    z-index: -1;
+/*Footer and Social Media Links*/
+.footer {
     width: 100%;
-    height: 299px;
-    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+    height: 100%;
+    background-color: #4DD0E1;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 -0.4em 0.7em 0 rgb(60, 60, 60);
+}
+
+.footer-social-media-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-social-media-facebook {
+    margin-top: 50%;
+    height: 30%;
+    padding:0;
+}
+
+.footer-social-media-twitter {
+    margin-top: 50%;
+    height: 30%;
+    padding:0;
+}
+
+.footer-social-media-linkedin {
+    margin-top: 50%;
+    height: 30%;
+    padding:0;
 }
 
 
-/*Profile Image*/
-
-.profile-container {
+/*Index - Homepage - Content*/
+.index-profile-container {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -127,19 +106,29 @@ body {
     position: absolute;
 }
 
-.profile-image {
-    width: 10em;
-    margin-left: 37.5em;
-    margin-top: 2em;
+.index-profile-image {
+    width: 17%;
+    margin-left: 60%;
+    margin-top: 3%;
     border: solid 0.2em #ffffff;
     border-radius: 0.3em;
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
 }
 
+.index-cover-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
 
-/*Main Content Sections*/
+.index-cover-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
+}
 
-.infoboxes-container {
+.index-boxes-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -147,31 +136,39 @@ body {
     z-index: -1;
 }
 
-.box {
+.index-box {
     background-color: #fff;
-    height: 9em;
-    width: 20em;
+    height: 10%;
+    width: 25%;
     margin: 2em 4em 2.66em 4em;
     border: 0.1em solid #607D8B;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
     border-radius: 0.5em;
     text-align: center;
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
 }
 
-.box a:link {
+.index-box p {
+    padding: 5% 10%;
+}
+
+.index-box a:link {
     text-decoration: none;
     color: #00BCD4;
 }
 
-.box a:visited {
+.index-box a:visited {
     text-decoration: none;
     color: #00BCD4;
 }
+
+
+/*CV Content*/
 
 .cv-main-content {
     margin: 0;
     background-color: #ffffff;
-    height: 32.47em;
 }
 
 .cv-main-content h1 {
@@ -182,18 +179,15 @@ body {
     font-weight: normal;
 }
 
-
-/*Wrapper*/
-
-.wrap {
+/*CV Section Wrapper*/
+.cv-content-wrapper {
     display: flex;
     flex-direction: row;
 }
 
 
-/*Left Side Content*/
-
-.left {
+/*CV Left Side Content*/
+.cv-left-content {
     margin: 0;
     padding-left: 4em;
     padding-right: 4em;
@@ -201,38 +195,47 @@ body {
     align-items: flex-start;
 }
 
-.left h3 {
+.cv-left-content h3 {
     font-family: "Poiret One", cursive;
     font-weight: bold;
     font-size: 1.3em;
-    padding: 1em, 0 0 0;
-    marign-bottom: 0;
+    padding: 1em 0 0 0;
+    margin-bottom: 0;
 }
 
-.name {
+.cv-full-name {
     font-weight: normal;
     font-size: 1em;
+    padding: 0;
 }
 
-.left ul {
+.cv-left-content h6 {
     font-family: "Poiret One", cursive;
     margin-top: 0;
     padding-top: 0;
-}
-
-.school {
     font-weight: bold;
     margin-left: -1em;
     font-size: 1em;
 }
 
-.courses {
+.cv-left-content p {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  margin-left: -1em;
+  text-align: justify;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.cv-education-course {
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
     margin-left: -1em;
     text-align: justify;
     font-size: 0.8em;
 }
 
-.date {
+.cv-course-date {
     list-style-type: none;
     padding-bottom: 0.9em;
     margin-left: -1em;
@@ -240,29 +243,29 @@ body {
 }
 
 
-/*Right Side Content*/
+/*CV Right Side Content*/
 
-.right {
+.cv-right-content {
     margin: 0;
     padding: 0 3em 0 3em;
     background-color: #ffffff;
     align-items: flex-start;
 }
 
-.right h3 {
+.cv-right-content h3 {
     font-family: "Poiret One", cursive;
     font-weight: bold;
     font-size: 1.3em;
-    padding: 1em, 0 0 0;
-    marign-bottom: 0;
+    padding: 1em 0 0 0;
+    margin-bottom: 0;
 }
 
-.right p {
+.cv-right-content p {
     font-family: "Poiret One", cursive;
     font-weight: normal;
 }
 
-.right ul {
+.cv-right-content ul {
     column-count: 2;
     column-gap: 2.5em;
     list-style-type: circle;
@@ -270,6 +273,8 @@ body {
     font-size: 1.2em;
     margin: 0;
 }
+
+/*Bio Content*/
 
 .bio-main-content {
     margin: 0;
@@ -297,7 +302,7 @@ body {
     font-weight: normal;
 }
 
-.end-line {
+.bio-end-line {
     display: flex;
     justify-content: center;
     color: #00BCD4;
@@ -319,6 +324,8 @@ body {
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
 }
 
+
+/*Contact Content*/
 .contact-main-content {
     margin: 0;
     padding: 0;
@@ -333,6 +340,7 @@ body {
     font-weight: normal;
 }
 
+/*Contact Section Wrapper*/
 .contact-wrap {
     display: flex;
     flex-direction: row;
@@ -341,17 +349,15 @@ body {
 }
 
 
-/*Left Side Content*/
-
-.contact-left {
+/*Contact Left Side Content*/
+.contact-left-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #ffffff;
-    height: 27.45em;
 }
 
-.contact-left p {
+.contact-left-content p {
     display: flex;
     margin: -0.5em 8em 0 3em;
     text-align: center;
@@ -360,9 +366,9 @@ body {
 }
 
 
-/*Contact Form*/
+/*Contact Left Side Static Form*/
 
-.contact-form {
+.contact-static-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -370,31 +376,30 @@ body {
     margin-top: 1em;
 }
 
-.linefield {
+.contact-form-basic-field {
     font-family: "Poiret One";
     font-size: 1.2em;
     width: 15.5em;
     padding-left: 0.5em;
-    height: 1.2em;
     margin-bottom: 1em;
     border: solid 0.2em #ffffff;
     border-radius: 0.3em;
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
 }
 
-.message-field {
+.contact-form-message-field {
     font-family: "Poiret One";
     font-size: 1.2em;
     width: 15.5em;
     padding-left: 0.5em;
-    height: 10em;
+    height: 9em;
     margin-bottom: 1em;
     border: solid 0.2em #ffffff;
     border-radius: 0.3em;
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
 }
 
-.send-button {
+.contact-form-send-button {
     font-family: "Poiret One";
     font-size: 1em;
     height: 2em;
@@ -402,12 +407,12 @@ body {
     color: black;
     font-weight: bold;
     background-color: #607D8B;
-    border: 0.1em solid #607D8B;
+    border: 0.1em solid;
     border-radius: 0.3em;
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(60, 60, 60);
 }
 
-.send-button:hover {
+.contact-form-send-button:hover {
     color: black;
     font-weight: bold;
     border: 0.1em solid #607D8B;
@@ -417,15 +422,14 @@ body {
 }
 
 
-/*Right Side Content*/
+/*Contact Right Side Content*/
 
-.contact-right {
+.contact-right-content {
     background-color: #ffffff;
-    height: 27.45em;
     margin-top: -1.5em;
 }
 
-.contact-right ul {
+.contact-right-content ul {
     display: flex;
     flex-direction: column;
     font-family: 'poiret one', sans-serif;
@@ -433,58 +437,24 @@ body {
     text-align: center;
 }
 
-.other-contact-options {
+.contact-other-details {
     list-style-type: none;
     font-size: 1.3em;
     padding-bottom: 0.2em;
     font-weight: bold;
 }
 
-.details {
+.contact-details {
     font-size: 1.3em;
     padding-bottom: 0.2em;
     list-style-type: none;
+    font-weight: li
 }
 
-.map {
+.contact-map {
     margin-left: 3em;
     width: 16em;
     border: solid 0.2em #ffffff;
     border-radius: 0.3em;
     box-shadow: 0.2em 0.2em 0.4em 0.2em rgb(60, 60, 60);
-}
-
-
-/*Footer*/
-
-.footer {
-    width: 100%;
-    height: 4em;
-    background-color: #4DD0E1;
-    box-shadow: 0 -0.4em 0.7em 0 rgb(60, 60, 60);
-}
-
-.socialmediabar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.facebook {
-    margin-top: 1em;
-    height: 1.5em;
-    padding-right: 0.1em;
-}
-
-.twitter {
-    margin-top: 1em;
-    height: 1.5em;
-    padding-left: 0.1em;
-}
-
-.linkedin {
-    margin-top: 1em;
-    height: 1.5em;
-    padding-right: 0.1em;
-    padding-left: 0.1em;
 }
