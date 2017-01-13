@@ -485,7 +485,7 @@ body {
 /*Media Queries*/
 
 
-/*When between 1 and 500px - Mobile Phone Size*/
+/*Mobile Phone Size*/
 
 @media (max-width:1250px) {
     body {
